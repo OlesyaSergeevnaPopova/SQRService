@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SQRServiceTest {
 
     @ParameterizedTest
-    @CsvSource(value = {"'positive test',200,300,3", "'negative test',300,400,2"})
+    @CsvSource(value = {"'positive test',200,300,3", "'positive test 2',300,500,5"})
     void square(String testName, int minBorder, int maxBorder, int expected) {
         SQRService service = new SQRService();
 
